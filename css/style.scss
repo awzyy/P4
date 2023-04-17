@@ -1,14 +1,94 @@
 /*variables*/
 
+$logo-font:'Shrikhand',sans-serif;
 $title-font:'Shrikhand',sans-serif;
 $text-font:'Roboto', sans-serif;
+$main-color:#9356DC;
+$secondary-color:#FF79DA;
+$third-color:#99E2D0;
+$background-color:#FFFFFF;
 
 /****** General ***********/
 * {
     font-family: $text-font
 }
 
-h1{
-    font-family: $title-font;
+body{
+    margin: 0;
 }
 
+.main-container{
+    width: 100%;
+    max-width: 767px;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: $logo-font;
+    font-weight: 400;
+    margin: 0;
+}
+
+.btn{
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    border:none;
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+}
+
+/***header***/
+
+.navbar{
+    text-align: center;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    padding: 14px 0 5px 0;
+}
+
+/***main***/
+
+/*location*/
+
+.location{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
+.location-icon{
+    background-color: $background-color;
+    border: none;
+}
+
+.location-dot{
+    margin-right: 17px;
+}
+
+.fa-location-dot{
+    font-size: 16px;
+}
+
+.location-text{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/*explorer*/
+
+.explore{
+    text-align: center;
+}
+
+.explore-title{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.explore-text{
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.explore-btn{
+    padding: 13px 18.75px 13px 18.75px;
+}
