@@ -37,6 +37,20 @@ a {
   color: inherit;
 }
 
+.card {
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 3px 0 3px 0;
+}
+.card .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-title {
+  font-size: 18px;
+}
+
 /***header***/
 .navbar {
   text-align: center;
@@ -114,16 +128,10 @@ a {
   margin: 54px 20px 0 20px;
 }
 
-.card {
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px;
-  box-shadow: 0px 4px 15px rgb(0, 0, 0);
+.restaurants-cards {
+  display: flex;
+  flex-direction: column;
 }
-.card .card img {
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.card .card-title {
-  font-size: 18px;
+.restaurants-cards .restaurants-cards .card {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */
