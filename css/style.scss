@@ -7,6 +7,8 @@ $main-color:#9356DC;
 $secondary-color:#FF79DA;
 $third-color:#99E2D0;
 $background-color:#FFFFFF;
+$btn-gradient:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);;
+$btn-gradient-light:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);;
 
 /****** General ***********/
 * {
@@ -34,8 +36,17 @@ h1{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     border-radius: 25px;
     border:none;
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    background: $btn-gradient;
 }
+
+ul{
+    padding:0;
+}
+
+a{
+    text-decoration:none;
+    color: inherit;
+} 
 
 /***header***/
 
@@ -91,4 +102,48 @@ h1{
 
 .explore-btn{
     padding: 13px 18.75px 13px 18.75px;
+}
+
+/*fonctionnement*/
+
+.fonctionnement{
+    margin: 48px 0 0 20px;
+
+    .list-fonctionnement{
+        font-weight: 500;
+        padding: 25px 0 25px 0;
+        display: flex;
+        gap: 25px;
+    }
+
+    .option-list{
+        text-align: center;
+        color: white;
+        margin: 0;
+        border-radius: 100%;
+        width: 24px;
+        height: 24px;
+        background-color: $main-color;
+    }
+}
+
+/*restaurants*/
+
+.restaurants{
+    margin: 54px 20px 0 20px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 20px;
+    padding: 5px;
+    box-shadow:(0px 4px 15px rgba(0, 0, 0, 1));
+    
+    .card img {
+        object-fit: cover;
+    }
+
+    .card-title {
+        font-size: 18px;
+    }
 }

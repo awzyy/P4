@@ -28,6 +28,15 @@ h1 {
   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
+ul {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /***header***/
 .navbar {
   text-align: center;
@@ -78,4 +87,43 @@ h1 {
 
 .explore-btn {
   padding: 13px 18.75px 13px 18.75px;
+}
+
+/*fonctionnement*/
+.fonctionnement {
+  margin: 48px 0 0 20px;
+}
+.fonctionnement .list-fonctionnement {
+  font-weight: 500;
+  padding: 25px 0 25px 0;
+  display: flex;
+  gap: 25px;
+}
+.fonctionnement .option-list {
+  text-align: center;
+  color: white;
+  margin: 0;
+  border-radius: 100%;
+  width: 24px;
+  height: 24px;
+  background-color: #9356DC;
+}
+
+/*restaurants*/
+.restaurants {
+  margin: 54px 20px 0 20px;
+}
+
+.card {
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px;
+  box-shadow: 0px 4px 15px rgb(0, 0, 0);
+}
+.card .card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.card .card-title {
+  font-size: 18px;
 }/*# sourceMappingURL=style.css.map */
