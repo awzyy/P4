@@ -40,10 +40,9 @@ a {
 .card {
   background-color: white;
   border-radius: 20px;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
-  margin: 3px 0 3px 0;
+  margin: 0 0 18px 0;
 }
-.card .card img {
+.card img {
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -56,6 +55,7 @@ a {
   text-align: center;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
   padding: 14px 0 5px 0;
+  margin-bottom: 4px;
 }
 
 /***main***/
@@ -64,10 +64,11 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: #EAEAEA;
 }
 
 .location-icon {
-  background-color: #FFFFFF;
+  background-color: transparent;
   border: none;
 }
 
@@ -125,13 +126,69 @@ a {
 
 /*restaurants*/
 .restaurants {
-  margin: 54px 20px 0 20px;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #F3F3F3;
 }
 
 .restaurants-cards {
   display: flex;
   flex-direction: column;
 }
-.restaurants-cards .restaurants-cards .card {
+.restaurants-cards .card {
+  display: flex;
+  flex-direction: column;
   width: 100%;
+  height: 251px;
+}
+.restaurants-cards img {
+  width: 100%;
+  height: 174px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restaurants-cards .card-content {
+  width: 100%;
+  padding-left: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.restaurants-cards .card-title {
+  margin-top: 16px;
+  margin-bottom: 5px;
+}
+.restaurants-cards .card-subtitle {
+  margin: 4px 0 4px 0;
+}
+
+/***footer***/
+footer {
+  background: #353535;
+  color: white;
+}
+
+.logo {
+  padding: 22px 0 16px 25px;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.footer-logo {
+  font-family: "Shrikhand", sans-serif;
+  margin: 0;
+}
+
+.footer-options {
+  padding: 0 0 0 25px;
+}
+.footer-options p {
+  margin: 7px 0 0 0;
+}
+.footer-options .footer-vectors {
+  display: flex;
+  gap: 11px;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */
