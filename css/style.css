@@ -111,6 +111,9 @@ a {
 .fonctionnement {
   margin: 85px 0 0 20px;
 }
+.fonctionnement h2 {
+  margin-bottom: 30px;
+}
 .fonctionnement .list-fonctionnement {
   font-weight: 500;
   padding: 25px 0 25px 0;
