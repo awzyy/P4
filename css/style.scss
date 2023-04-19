@@ -94,14 +94,11 @@ a{
     justify-content:center;
     align-items: center;
     background: $light-gray-background;
+    gap:15px;
     
     .location-icon{
         background-color: transparent;
         border: none;
-    }
-
-    .location-dot{
-        margin-right: 17px;
     }
 
     .fa-location-dot{
@@ -125,12 +122,16 @@ a{
         font-size: 24px;
         font-weight: 700;
         margin: 0;
+        padding-left: 42px;
+        width: 275px;
     }
 
     .explore-text{
         font-size: 18px;
         font-weight: 300;
         margin-bottom: 0;
+        width: 315px;
+        padding-left: 34px;
     }
 
     .explore-btn{
@@ -184,7 +185,8 @@ a{
 
 .restaurants {
     width: 100%;
-    padding: 20px;
+    padding: 34px 20px 66px 20px;
+    margin-top: 68px;
     box-sizing: border-box;
     background: $lighter-gray-background;
 }
@@ -246,7 +248,7 @@ footer{
 }
 
 .footer-options{
-    padding: 0 0 0 25px;
+    padding: 0 0 22px 25px;
 
     p{
         margin: 7px 0 0 0;
@@ -256,6 +258,23 @@ footer{
         display: flex;
         gap: 11px;
         font-weight: 500;
+    }
+
+    i{
+        width: 13px;
+        height: 11px;
+    }
+
+    .fa-utensils{
+        font-size: 13px;
+        position: relative;
+        top:10px;
+    }
+
+    .fa-handshake-angle{
+        font-size: 13px;
+        position: relative;
+        top:10px;
     }
 }
 
