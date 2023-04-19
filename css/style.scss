@@ -28,12 +28,6 @@ body{
     box-sizing: border-box;
 }
 
-h1{
-    font-family: $logo-font;
-    font-weight: 400;
-    margin: 0;
-}
-
 .btn{
     color: white;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
@@ -68,11 +62,26 @@ a{
 /***header***/
 
 .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
     padding: 14px 0 5px 0;
-    margin-bottom: 4px;
+    position: relative;
+
+    p{
+        font-family: $logo-font;
+        font-size: 30px;
+        font-weight: 400;
+        margin: 0;
+    }
+
+    .fa-arrow-left{
+        display: none;
+    }
 }
+
 
 /***main***/
 
@@ -83,25 +92,26 @@ a{
     justify-content:center;
     align-items: center;
     background: $light-gray-background;
+    
+    .location-icon{
+        background-color: transparent;
+        border: none;
+    }
+
+    .location-dot{
+        margin-right: 17px;
+    }
+
+    .fa-location-dot{
+        font-size: 16px;
+    }
+
+    .location-text{
+        font-size: 16px;
+        font-weight: 500;
+    }
 }
 
-.location-icon{
-    background-color: transparent;
-    border: none;
-}
-
-.location-dot{
-    margin-right: 17px;
-}
-
-.fa-location-dot{
-    font-size: 16px;
-}
-
-.location-text{
-    font-size: 16px;
-    font-weight: 500;
-}
 
 /*explorer*/
 
