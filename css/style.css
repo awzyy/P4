@@ -90,25 +90,26 @@ a {
 /*explorer*/
 .explore {
   text-align: center;
+  margin-top: 39.5px;
 }
-
-.explore-title {
+.explore .explore-title {
   font-size: 24px;
   font-weight: 700;
+  margin: 0;
 }
-
-.explore-text {
+.explore .explore-text {
   font-size: 18px;
   font-weight: 300;
+  margin-bottom: 0;
 }
-
-.explore-btn {
+.explore .explore-btn {
+  margin-top: 27px;
   padding: 13px 18.75px 13px 18.75px;
 }
 
 /*fonctionnement*/
 .fonctionnement {
-  margin: 48px 0 0 20px;
+  margin: 85px 0 0 20px;
 }
 .fonctionnement .list-fonctionnement {
   font-weight: 500;
@@ -119,11 +120,21 @@ a {
 .fonctionnement .option-list {
   text-align: center;
   color: white;
+  padding-top: 4px;
   margin: 0;
-  border-radius: 100%;
+  border-radius: 50%;
   width: 24px;
-  height: 24px;
+  height: 20px;
   background-color: #9356DC;
+}
+.fonctionnement .fa-mobile-screen-button {
+  color: #7E7E7E;
+}
+.fonctionnement .fa-list-ul {
+  color: #7E7E7E;
+}
+.fonctionnement .fa-store {
+  color: #9356DC;
 }
 
 /*restaurants*/

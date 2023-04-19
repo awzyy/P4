@@ -7,11 +7,12 @@ $main-color:#9356DC;
 $secondary-color:#FF79DA;
 $third-color:#99E2D0;
 $background-color:#FFFFFF;
-$btn-gradient:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);;
-$btn-gradient-light:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);;
+$btn-gradient:linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+$btn-gradient-light:linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
 $light-gray-background:#EAEAEA;
 $lighter-gray-background:#F3F3F3;
 $footer-background:#353535;
+$icon-default:#7E7E7E;
 
 /****** General ***********/
 * {
@@ -34,6 +35,7 @@ body{
     border-radius: 25px;
     border:none;
     background: $btn-gradient;
+
 }
 
 ul{
@@ -117,26 +119,31 @@ a{
 
 .explore{
     text-align: center;
+    margin-top: 39.5px;
+
+    .explore-title{
+        font-size: 24px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    .explore-text{
+        font-size: 18px;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
+    .explore-btn{
+        margin-top: 27px;
+        padding: 13px 18.75px 13px 18.75px;
+    }
 }
 
-.explore-title{
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.explore-text{
-    font-size: 18px;
-    font-weight: 300;
-}
-
-.explore-btn{
-    padding: 13px 18.75px 13px 18.75px;
-}
 
 /*fonctionnement*/
 
 .fonctionnement{
-    margin: 48px 0 0 20px;
+    margin: 85px 0 0 20px;
 
     .list-fonctionnement{
         font-weight: 500;
@@ -148,11 +155,24 @@ a{
     .option-list{
         text-align: center;
         color: white;
+        padding-top: 4px;
         margin: 0;
-        border-radius: 100%;
+        border-radius: 50%;
         width: 24px;
-        height: 24px;
+        height: 20px;
         background-color: $main-color;
+    }
+
+    .fa-mobile-screen-button{
+        color: $icon-default;
+    }
+
+    .fa-list-ul{
+        color: $icon-default;
+    }
+
+    .fa-store{
+        color: $main-color;
     }
 }
 
