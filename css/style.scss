@@ -149,18 +149,26 @@ a{
     .list-fonctionnement{
         font-weight: 500;
         padding: 25px 0 25px 0;
+        margin-bottom: 25px;
+        margin-left: 12px;
         display: flex;
+        align-items: center;
         gap: 25px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+        border-radius: 20px;
+        width: 322px;
     }
 
     .option-list{
         text-align: center;
+        position: relative;
+        right:12px;
         color: white;
-        padding-top: 4px;
+        padding-top: 2px;
         margin: 0;
         border-radius: 50%;
         width: 24px;
-        height: 20px;
+        height: 22px;
         background-color: $main-color;
     }
 
@@ -173,7 +181,7 @@ a{
     }
 
     .fa-store{
-        color: $main-color;
+        color: $icon-default;
     }
 }
 
@@ -223,15 +231,30 @@ a{
         margin: 4px 0 4px 0;
     }
 
-    .fa-heart{
+    .heart{
         position: relative;
         bottom:42px;
         left: 280px;
+    }
+
+    .heart1{
+        position: relative;
+        bottom:70px;
+        left: 280px;
+    }
+
+    .heart2{
+        position: relative;
+        bottom:70px;
+        left: 280px;
+    }
+
+    .fa-heart{
         font-size: 22px;
     }
 
     @mixin new-button{
-        position: absolute;
+        position: relative;
         text-align: center;
         border:none;
         border-radius: 2px;
@@ -246,14 +269,14 @@ a{
 
     .new-card1{
         @include new-button;
-        bottom: 510px;
-        left: 260px;
+        bottom: 230px;
+        left: 230px;
     }
 
     .new-card2{
         @include new-button;
-        bottom: 240px;
-        left: 260px;
+        bottom: 230px;
+        left: 230px;
     }
 }
 
