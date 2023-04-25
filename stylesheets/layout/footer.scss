@@ -1,0 +1,48 @@
+/***footer***/
+
+footer{
+    background: $footer-background;
+    color: white;
+}
+
+.logo{
+    padding: 22px 0 16px 25px;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-logo{
+    font-family: $logo-font;
+    margin: 0;
+}
+
+.footer-options{
+    padding: 0 0 22px 25px;
+
+    p{
+        margin: 7px 0 0 0;
+    }
+
+    .footer-vectors{
+        display: flex;
+        gap: 11px;
+        font-weight: 500;
+    }
+
+    i{
+        width: 13px;
+        height: 11px;
+    }
+
+    .fa-utensils{
+        font-size: 13px;
+        position: relative;
+        top:10px;
+    }
+
+    .fa-handshake-angle{
+        font-size: 13px;
+        position: relative;
+        top:10px;
+    }
+}
