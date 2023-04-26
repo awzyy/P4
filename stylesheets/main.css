@@ -445,6 +445,13 @@ footer {
   margin-bottom: 40px;
 }
 
+.heart-title {
+  position: absolute;
+  font-size: 24px;
+  bottom: 1038px;
+  left: 310px;
+}
+
 /*commande*/
 .commande {
   text-align: center;
