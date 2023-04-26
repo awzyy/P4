@@ -46,3 +46,23 @@ footer{
         top:10px;
     }
 }
+
+@media (min-width: 768px) {
+    footer{
+        display: flex;
+        flex-direction: row-reverse;
+    }
+
+    .footer-options{
+        display: flex;
+        padding-top: 64px;
+        padding-bottom: 31px;
+        gap: 30px;
+    }
+
+    .logo{
+        padding: 64px 26px 31px 100px;
+    }
+
+
+}

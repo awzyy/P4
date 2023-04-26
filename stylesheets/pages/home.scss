@@ -181,3 +181,99 @@
         left: 230px;
     }
 }
+
+/*tablet-desktop responsive*/
+
+@media (min-width: 768px) {
+
+    .main-container{
+        width: 100%;
+        max-width: 1440px;
+    }
+
+    /*explorer*/
+    .explore{
+        margin-top: 30px;
+
+        .explore-title{
+            width: 100%;
+            padding:0;
+        }
+    
+        .explore-text{
+            width: 100%;
+            padding: 0;
+        }
+    }
+
+    /*fonctionnement*/
+
+    .fonctionnement{
+        margin: 85px 0 0 180px;
+
+        ul{
+            display: flex;
+            gap: 36.5px;
+        }
+
+    }
+
+/*restaurants*/
+
+    .restaurants {
+        width: 100%;
+        padding: 34px 180px 66px 180px;
+    }
+
+    .restaurants-list{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px 90px;
+    }
+
+    .restaurants-cards {
+        display: flex;
+        flex-wrap: wrap;
+
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 490px;
+            height: 251px;
+        }
+
+        .heart{
+            position: relative;
+            bottom:42px;
+            left: 440px;
+        }
+
+        .heart1{
+            position: relative;
+            bottom:70px;
+            left: 440px;
+        }
+
+        .heart2{
+            position: relative;
+            bottom:70px;
+            left: 440px;
+        }
+
+        .fa-heart{
+            font-size: 22px;
+        }
+
+        .new-card1{
+            @include new-button;
+            bottom: 230px;
+            left: 380px;
+        }
+
+        .new-card2{
+            @include new-button;
+            bottom: 230px;
+            left: 380px;
+        }
+    }
+}
