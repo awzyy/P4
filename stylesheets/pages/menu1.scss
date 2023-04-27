@@ -35,16 +35,25 @@
     }
 
     h2{
-        margin-bottom: 30px;
+        margin-bottom: 24px;
         font-size: 16px;
         font-weight: 300;
         margin-left: 13px;
-        margin-bottom: 0;
+        position: relative;
+
+        &:before{
+            position: absolute;
+            top:1.5em;
+            width: 40px;
+            content: '';
+            border-top: 3px solid $menu-underline;
+        }
     }
 
-    li{
+    .plat{
         font-size: 18px;
         font-weight: 500;
+        width: 89%;
     }
 
     p{
@@ -54,28 +63,38 @@
         margin-top: 5px;
     }
 
+    .menu-list{
+        margin-right:13px;
+        margin-bottom: 40px;
+    }
+
     .choice-menu{
         padding: 12px 0 12px 15px;
         margin-bottom: 12px;
         margin-left: 13px;
         display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content:space-between;
         box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
         border-radius: 20px;
         max-width: 100%;
     }
 
-    .menu-list{
-        margin-right:13px;
-        margin-bottom: 40px;
+    .price{
+        padding-right: 13.5px;
+
+        .price-tag{
+            font-weight: 700;
+        }
     }
+
 }
 
-.heart-title{
+.fa-heart{
     position: absolute;
     font-size: 24px;
-    bottom: 1038px;
-    left: 310px;
+    bottom: 1110px;
+    left: 330px;
 }
 
 /*commande*/

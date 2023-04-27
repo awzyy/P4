@@ -421,15 +421,23 @@ footer {
   padding-top: 32px;
 }
 .menu h2 {
-  margin-bottom: 30px;
+  margin-bottom: 24px;
   font-size: 16px;
   font-weight: 300;
   margin-left: 13px;
-  margin-bottom: 0;
+  position: relative;
 }
-.menu li {
+.menu h2:before {
+  position: absolute;
+  top: 1.5em;
+  width: 40px;
+  content: "";
+  border-top: 3px solid #99E2D0;
+}
+.menu .plat {
   font-size: 18px;
   font-weight: 500;
+  width: 89%;
 }
 .menu p {
   font-size: 15px;
@@ -437,26 +445,33 @@ footer {
   margin-bottom: 0;
   margin-top: 5px;
 }
+.menu .menu-list {
+  margin-right: 13px;
+  margin-bottom: 40px;
+}
 .menu .choice-menu {
   padding: 12px 0 12px 15px;
   margin-bottom: 12px;
   margin-left: 13px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
   border-radius: 20px;
   max-width: 100%;
 }
-.menu .menu-list {
-  margin-right: 13px;
-  margin-bottom: 40px;
+.menu .price {
+  padding-right: 13.5px;
+}
+.menu .price .price-tag {
+  font-weight: 700;
 }
 
-.heart-title {
+.fa-heart {
   position: absolute;
   font-size: 24px;
-  bottom: 1038px;
-  left: 310px;
+  bottom: 1110px;
+  left: 330px;
 }
 
 /*commande*/
