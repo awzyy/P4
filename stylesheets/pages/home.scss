@@ -147,28 +147,6 @@
         margin: 4px 0 4px 0;
     }
 
-    // .heart{
-    //     position: relative;
-    //     bottom:42px;
-    //     left: 280px;
-    // }
-
-    // .heart1{
-    //     position: relative;
-    //     bottom:70px;
-    //     left: 280px;
-    // }
-
-    // .heart2{
-    //     position: relative;
-    //     bottom:70px;
-    //     left: 280px;
-    // }
-
-    // .fa-heart{
-    //     font-size: 22px;
-    // }
-
     .new-card1{
         @include new-button;
         bottom: 230px;
@@ -179,6 +157,30 @@
         @include new-button;
         bottom: 230px;
         left: 230px;
+    }
+
+    .heart1{
+        position: relative;
+        top:1060px;
+        right:50px;
+    }
+
+    .heart2{
+        position: relative;
+        right:50px;
+        top:1060px;
+    }
+
+    .heart3{
+        position: relative;
+        right:50px;
+        top:1090px;
+    }
+
+    .heart4{
+        position: relative;
+        right:50px;
+        top:1090px;
     }
 }
 
@@ -242,28 +244,6 @@
             height: 251px;
         }
 
-        // .heart{
-        //     position: relative;
-        //     top: 790px;
-        //     left: 100px;
-        // }
-
-        // .heart1{
-        //     position: relative;
-        //     bottom:00px;
-        //     left: 0px;
-        // }
-
-        // .heart2{
-        //     position: relative;
-        //     bottom:50px;
-        //     left: 0px;
-        // }
-
-        // .fa-heart{
-        //     font-size: 22px;
-        // }
-
         .new-card1{
             @include new-button;
             bottom: 230px;
@@ -275,5 +255,29 @@
             bottom: 230px;
             left: 380px;
         }
+    }
+
+    .heart1{
+        position: relative;
+        top:1060px;
+        left:-260px;
+    }
+
+    .heart2{
+        position: relative;
+        top:1060px;
+        left:-260px;
+    }
+
+    .heart3{
+        position: relative;
+        top:1090px;
+        left:-260px;
+    }
+
+    .heart4{
+        position: relative;
+        top:1090px;
+        left:-260px;
     }
 }
