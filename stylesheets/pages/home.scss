@@ -147,27 +147,27 @@
         margin: 4px 0 4px 0;
     }
 
-    .heart{
-        position: relative;
-        bottom:42px;
-        left: 280px;
-    }
+    // .heart{
+    //     position: relative;
+    //     bottom:42px;
+    //     left: 280px;
+    // }
 
-    .heart1{
-        position: relative;
-        bottom:70px;
-        left: 280px;
-    }
+    // .heart1{
+    //     position: relative;
+    //     bottom:70px;
+    //     left: 280px;
+    // }
 
-    .heart2{
-        position: relative;
-        bottom:70px;
-        left: 280px;
-    }
+    // .heart2{
+    //     position: relative;
+    //     bottom:70px;
+    //     left: 280px;
+    // }
 
-    .fa-heart{
-        font-size: 22px;
-    }
+    // .fa-heart{
+    //     font-size: 22px;
+    // }
 
     .new-card1{
         @include new-button;
@@ -242,27 +242,27 @@
             height: 251px;
         }
 
-        .heart{
-            position: relative;
-            bottom:42px;
-            left: 440px;
-        }
+        // .heart{
+        //     position: relative;
+        //     top: 790px;
+        //     left: 100px;
+        // }
 
-        .heart1{
-            position: relative;
-            bottom:70px;
-            left: 440px;
-        }
+        // .heart1{
+        //     position: relative;
+        //     bottom:00px;
+        //     left: 0px;
+        // }
 
-        .heart2{
-            position: relative;
-            bottom:70px;
-            left: 440px;
-        }
+        // .heart2{
+        //     position: relative;
+        //     bottom:50px;
+        //     left: 0px;
+        // }
 
-        .fa-heart{
-            font-size: 22px;
-        }
+        // .fa-heart{
+        //     font-size: 22px;
+        // }
 
         .new-card1{
             @include new-button;

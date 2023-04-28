@@ -244,24 +244,6 @@ footer {
 .restaurants-cards .card-subtitle {
   margin: 4px 0 4px 0;
 }
-.restaurants-cards .heart {
-  position: relative;
-  bottom: 42px;
-  left: 280px;
-}
-.restaurants-cards .heart1 {
-  position: relative;
-  bottom: 70px;
-  left: 280px;
-}
-.restaurants-cards .heart2 {
-  position: relative;
-  bottom: 70px;
-  left: 280px;
-}
-.restaurants-cards .fa-heart {
-  font-size: 22px;
-}
 .restaurants-cards .new-card1 {
   position: relative;
   text-align: center;
@@ -338,24 +320,6 @@ footer {
     flex-direction: column;
     width: 490px;
     height: 251px;
-  }
-  .restaurants-cards .heart {
-    position: relative;
-    bottom: 42px;
-    left: 440px;
-  }
-  .restaurants-cards .heart1 {
-    position: relative;
-    bottom: 70px;
-    left: 440px;
-  }
-  .restaurants-cards .heart2 {
-    position: relative;
-    bottom: 70px;
-    left: 440px;
-  }
-  .restaurants-cards .fa-heart {
-    font-size: 22px;
   }
   .restaurants-cards .new-card1 {
     position: relative;
@@ -484,4 +448,55 @@ footer {
   padding: 13px 16px 13px 16px;
   width: 186px;
   height: 50px;
+}
+
+@media (min-width: 768px) {
+  .main-container {
+    width: 100%;
+    max-width: 1440px;
+  }
+  /*header*/
+  .fa-arrow-left {
+    font-size: 20px;
+    right: 1400px;
+  }
+  /*pic*/
+  .menu-pic {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 383px;
+  }
+  .pic {
+    width: 100%;
+    height: 200%;
+  }
+  /*menu*/
+  .menu {
+    width: 73.25%;
+    margin-left: 193px;
+  }
+  .menu h1 {
+    text-align: center;
+    margin-left: 0;
+    padding-top: 51px;
+  }
+  .menu .dishes {
+    padding-left: 210px;
+  }
+  .menu .plat {
+    width: 100%;
+  }
+  .menu .menu-list {
+    margin-right: 0;
+  }
+  .menu .choice-menu {
+    padding: 12px 0 12px 15px;
+    margin-left: 0;
+    width: 634px;
+  }
+  .fa-heart {
+    bottom: 1110px;
+    left: 700px;
+  }
 }/*# sourceMappingURL=main.css.map */
