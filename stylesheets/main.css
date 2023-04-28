@@ -462,14 +462,18 @@ footer {
   }
   /*pic*/
   .menu-pic {
-    -o-object-fit: cover;
-       object-fit: cover;
     width: 100%;
     height: 383px;
+    overflow: hidden;
   }
   .pic {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: 0 200%;
+       object-position: 0 200%;
     width: 100%;
     height: 200%;
+    max-height: 200%;
   }
   /*menu*/
   .menu {
