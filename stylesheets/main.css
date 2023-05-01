@@ -246,6 +246,15 @@ footer {
   border-radius: 20px;
   width: 322px;
 }
+.fonctionnement .list-fonctionnement:hover .fa-mobile-screen-button {
+  color: #9356DC;
+}
+.fonctionnement .list-fonctionnement:hover .fa-list-ul {
+  color: #9356DC;
+}
+.fonctionnement .list-fonctionnement:hover .fa-store {
+  color: #9356DC;
+}
 .fonctionnement .option-list {
   text-align: center;
   position: relative;
