@@ -1,0 +1,28 @@
+// loader
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+        border-top-color: $main-color;
+        border-bottom-color: $main-color;
+    }
+    50%{
+        transform: rotate(180deg);
+        border-top-color: $secondary-color;
+        border-bottom-color: $secondary-color;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-top-color: $main-color;
+        border-bottom-color: $main-color;
+    }
+}
+
+@keyframes visibility {
+    90%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
