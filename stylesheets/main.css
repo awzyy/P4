@@ -347,26 +347,6 @@ footer {
   bottom: 230px;
   left: 230px;
 }
-.restaurants-cards .heart1 {
-  position: relative;
-  top: 1060px;
-  right: 50px;
-}
-.restaurants-cards .heart2 {
-  position: relative;
-  right: 50px;
-  top: 1060px;
-}
-.restaurants-cards .heart3 {
-  position: relative;
-  right: 50px;
-  top: 1090px;
-}
-.restaurants-cards .heart4 {
-  position: relative;
-  right: 50px;
-  top: 1090px;
-}
 
 /*tablet-desktop responsive*/
 @media (min-width: 768px) {
@@ -443,26 +423,6 @@ footer {
     font-weight: 500;
     bottom: 230px;
     left: 380px;
-  }
-  .heart1 {
-    position: relative;
-    top: 1060px;
-    left: -260px;
-  }
-  .heart2 {
-    position: relative;
-    top: 1060px;
-    left: -260px;
-  }
-  .heart3 {
-    position: relative;
-    top: 1090px;
-    left: -260px;
-  }
-  .heart4 {
-    position: relative;
-    top: 1090px;
-    left: -260px;
   }
 }
 /*header*/
