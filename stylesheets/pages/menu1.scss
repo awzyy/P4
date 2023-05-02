@@ -95,7 +95,7 @@
     position: absolute;
     font-size: 24px;
     bottom: 1110px;
-    left: 330px;
+    left: 320px;
 }
 
 /*commande*/
@@ -109,6 +109,11 @@
     padding: 13px 16px 13px 16px;
     width: 186px;
     height: 50px;
+    transition: box-shadow 400ms;
+    &:hover{
+        background: $btn-gradient-light;
+        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+    }
 }
 
 

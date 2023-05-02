@@ -514,7 +514,7 @@ footer {
   position: absolute;
   font-size: 24px;
   bottom: 1110px;
-  left: 330px;
+  left: 320px;
 }
 
 /*commande*/
@@ -527,6 +527,11 @@ footer {
   padding: 13px 16px 13px 16px;
   width: 186px;
   height: 50px;
+  transition: box-shadow 400ms;
+}
+.commander-btn:hover {
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.15)), linear-gradient(200.64deg, #9356DC -5.2%, #FF79DA 110.74%);
+  box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
 }
 
 @media (min-width: 768px) {
