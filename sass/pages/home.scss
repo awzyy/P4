@@ -1,131 +1,124 @@
-/*location*/
-
-.location{
-    display: flex;
-    justify-content:center;
-    align-items: center;
-    background: $light-gray-background;
-    gap:15px;
+.main{
+    &__location{
+        @include flex-center;
+        background: $light-gray-background;
+        gap:15px;
+        
+        .location-icon{
+            background-color: transparent;
+            border: none;
+        }
     
-    .location-icon{
-        background-color: transparent;
-        border: none;
-    }
-
-    .fa-location-dot{
-        font-size: 16px;
-    }
-
-    .location-text{
-        font-size: 16px;
-        font-weight: 500;
-    }
-}
-
-
-/*explorer*/
-
-.explore{
-    text-align: center;
-    margin-top: 39.5px;
-
-    .explore-title{
-        width: 100%;
-        font-size: 24px;
-        font-weight: 700;
-        margin: 0;
-        padding-left: 42px;
-        width: 275px;
-    }
-
-    .explore-text{
-        font-size: 18px;
-        font-weight: 300;
-        margin-bottom: 0;
-        width: 315px;
-        padding-left: 34px;
-    }
-
-    .explore-btn{
-        margin-top: 27px;
-        padding: 13px 18.75px 13px 18.75px;
-        transition: box-shadow 400ms;
-        &:hover{
-            background: $btn-gradient-light;
-            box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+        .fa-location-dot{
+            font-size: 16px;
         }
-    }
-}
-
-
-/*fonctionnement*/
-
-.fonctionnement{
-    margin: 85px 0 0 20px;
-
-    h2{
-        margin-bottom: 30px;
-    }
-
-    .list-fonctionnement{
-        font-weight: 500;
-        padding: 25px 0 25px 0;
-        margin-bottom: 25px;
-        margin-left: 12px;
-        display: flex;
-        align-items: center;
-        gap: 25px;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-        width: 322px;
-        transition: box-shadow 300ms;
-
-        &:hover{
-            box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
-
-            .fa-mobile-screen-button{
-                color: $main-color;
-            }
-        
-            .fa-list-ul{
-                color: $main-color;
-            }
-        
-            .fa-store{
-                color: $main-color;
-            }
+    
+        .location-text{
+            font-size: 16px;
+            font-weight: 500;
         }
     }
 
-    .option-list{
+    &__explore{
         text-align: center;
-        position: relative;
-        right:12px;
-        color: white;
-        padding-top: 2px;
-        margin: 0;
-        border-radius: 50%;
-        width: 24px;
-        height: 22px;
-        background-color: $main-color;
+        margin-top: 39.5px;
+
+        &__title{
+            width: 100%;
+            font-size: 24px;
+            font-weight: 700;
+            margin: 0;
+            padding-left: 42px;
+            width: 275px;
+        }
+    
+        &__text{
+            font-size: 18px;
+            font-weight: 300;
+            margin-bottom: 0;
+            width: 315px;
+            padding-left: 34px;
+        }
+    
+        .explore-btn{
+            margin-top: 27px;
+            padding: 13px 18.75px 13px 18.75px;
+            transition: box-shadow 400ms;
+            &:hover{
+                background: $btn-gradient-light;
+                box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+            }
+        }
     }
 
-    .fa-mobile-screen-button{
-        color: $icon-default;
-    }
-
-    .fa-list-ul{
-        color: $icon-default;
-    }
-
-    .fa-store{
-        color: $icon-default;
+    &__fonctionnement{
+        margin: 85px 0 0 20px;
+    
+        h2{
+            margin-bottom: 30px;
+        }
+    
+        &__list{
+            font-weight: 500;
+            padding: 25px 0 25px 0;
+            margin-bottom: 25px;
+            margin-left: 12px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+            border-radius: 20px;
+            width: 322px;
+            transition: box-shadow 300ms;
+    
+            &:hover{
+                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+    
+                .fa-mobile-screen-button{
+                    color: $main-color;
+                }
+            
+                .fa-list-ul{
+                    color: $main-color;
+                }
+            
+                .fa-store{
+                    color: $main-color;
+                }
+            }
+        }
+    
+        &__option{
+            text-align: center;
+            position: relative;
+            right:12px;
+            color: white;
+            padding-top: 2px;
+            margin: 0;
+            border-radius: 50%;
+            width: 24px;
+            height: 22px;
+            background-color: $main-color;
+        }
+    
+        .fa-mobile-screen-button{
+            color: $icon-default;
+        }
+    
+        .fa-list-ul{
+            color: $icon-default;
+        }
+    
+        .fa-store{
+            color: $icon-default;
+        }
     }
 }
+
 
 /*restaurants*/
 
-.restaurants {
+.main__restaurants {
     width: 100%;
     padding: 34px 20px 66px 20px;
     margin-top: 68px;
@@ -203,15 +196,15 @@
     }
 
     /*explorer*/
-    .explore{
+    .main__explore{
         margin-top: 30px;
 
-        .explore-title{
+        .main__explore__title{
             width: 100%;
             padding:0;
         }
     
-        .explore-text{
+        .main__explore__text{
             width: 100%;
             padding: 0;
         }
@@ -219,7 +212,7 @@
 
     /*fonctionnement*/
 
-    .fonctionnement{
+    .main__fonctionnement{
         margin: 85px 0 0 180px;
 
         ul{
@@ -231,7 +224,7 @@
 
 /*restaurants*/
 
-    .restaurants {
+    .main__restaurants {
         width: 100%;
         padding: 34px 180px 66px 180px;
     }
