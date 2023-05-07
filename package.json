@@ -8,5 +8,6 @@
     "prefix" :"postcss css/style.css --use autoprefixer -d css/prefixed"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist" : "last 4 versions"
 }
