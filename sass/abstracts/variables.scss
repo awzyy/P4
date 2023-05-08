@@ -15,3 +15,10 @@ $menu-background:#F6F6F6;
 $footer-background:#353535;
 $icon-default:#7E7E7E;
 $menu-underline: #99E2D0;
+
+
+$base-font-size: 16px;
+$light-main-color : lighten($main-color, 5%);
+$light-secondary-color : lighten($secondary-color, 5%);
+$gradient : linear-gradient(to bottom, $secondary-color, $main-color 95%);
+$light-gradient : linear-gradient(to bottom, $light-secondary-color, $light-main-color 80%);

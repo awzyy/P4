@@ -20,98 +20,110 @@
     }
 
     &__explore{
+        flex-direction: column;
+        padding: rem-calc(40) rem-calc(20) rem-calc(60);
         text-align: center;
-        margin-top: 39.5px;
-
-        &__title{
-            width: 100%;
-            font-size: 24px;
-            font-weight: 700;
-            margin: 0;
-            padding-left: 42px;
-            width: 275px;
-        }
-    
-        &__text{
-            font-size: 18px;
-            font-weight: 300;
-            margin-bottom: 0;
-            width: 315px;
-            padding-left: 34px;
-        }
-    
-        .explore-btn{
-            margin-top: 27px;
-            padding: 13px 18.75px 13px 18.75px;
-            transition: box-shadow 400ms;
-            &:hover{
-                background: $btn-gradient-light;
-                box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
+        @include flex-center;
+            h2{
+                margin:0;
+                font-size: 24px;
+                font-weight: 700;
             }
+            p{
+                font-size: 18px;
+                font-weight: 300;
+            }
+            &__text{
+                margin: rem-calc(15) 0 rem-calc(27);
+                font-weight: 300;
+            }
+            &__button{
+                @include base-shadow;
+                @include button-style;
+                &:hover{
+                    @include button-hover;       
+                }
+            }
+        }
+
+
+
+    .process-title{
+        padding-left: rem-calc(20);
+        margin-bottom: 0;
+        @media screen and (min-width: 768px) {
+            margin-left: rem-calc(160);
         }
     }
 
-    &__fonctionnement{
-        margin: 85px 0 0 20px;
-    
-        h2{
-            margin-bottom: 30px;
+    &__process{
+        @include flex-center;
+        flex-direction: column;
+        padding: rem-calc(40) rem-calc(20);
+        @media screen and (min-width: 768px) {
+            flex-direction: row;
+            gap: rem-calc(35);
         }
-    
-        &__list{
-            font-weight: 500;
-            padding: 25px 0 25px 0;
-            margin-bottom: 25px;
-            margin-left: 12px;
-            display: flex;
-            align-items: center;
-            gap: 25px;
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-            border-radius: 20px;
-            width: 322px;
-            transition: box-shadow 300ms;
-    
-            &:hover{
-                box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
-    
-                .fa-mobile-screen-button{
-                    color: $main-color;
+
+        .fonctionnement-title{
+            margin: 0;
+            padding: 0;
+            display: none;
+        }
+            &__step{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                flex-direction: row-reverse;
+                position: relative;
+                width: 92%;
+                max-width: rem-calc(691);
+                margin-bottom: rem-calc(25);
+                padding: rem-calc(28) rem-calc(15) rem-calc(28) 0;
+                border-radius: rem-calc(20);
+                cursor: pointer;
+                transition: all 0.3s ease-in-out;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                @media screen and (min-width: 768px) {
+                    justify-content: center; 
+                    max-width: rem-calc(307);
                 }
-            
-                .fa-list-ul{
-                    color: $main-color;
+                .number{
+                    @include flex-center;
+                    position: absolute;
+                    left: rem-calc(-12);
+                    width: rem-calc(25);
+                    height: rem-calc(25);
+                    border-radius: 50%;
+                    font-size: clamp(1.1rem, 2vw, 1.1rem);
+                    color: white;
+                    background-color: $main-color;
+                }    
+                p{
+                    font-size: 16px;
+                    font-weight: 500;
+                    margin: 0;
                 }
-            
-                .fa-store{
-                    color: $main-color;
+                &:nth-child(2)::after{
+                    content: '\f3cf';
+                    @include logo-process;
+                }
+                &:nth-child(3)::after{
+                    content: '\f03a';
+                    @include logo-process;
+                }
+                &:nth-child(4)::after{
+                    content: '\f54e';
+                    @include logo-process;
+                }
+                &:hover, &:focus{
+                    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+                        &:hover::after,
+                        &:focus::after{
+                            color: $main-color;
+                        }
                 }
             }
-        }
-    
-        &__option{
-            text-align: center;
-            position: relative;
-            right:12px;
-            color: white;
-            padding-top: 2px;
-            margin: 0;
-            border-radius: 50%;
-            width: 24px;
-            height: 22px;
-            background-color: $main-color;
-        }
-    
-        .fa-mobile-screen-button{
-            color: $icon-default;
-        }
-    
-        .fa-list-ul{
-            color: $icon-default;
-        }
-    
-        .fa-store{
-            color: $icon-default;
-        }
     }
 }
 
