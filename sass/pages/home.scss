@@ -46,85 +46,85 @@
             }
         }
 
-
-
-    .process-title{
-        padding-left: rem-calc(20);
-        margin-bottom: 0;
-        @media screen and (min-width: 768px) {
-            margin-left: rem-calc(160);
-        }
-    }
-
-    &__process{
-        @include flex-center;
-        flex-direction: column;
-        padding: rem-calc(40) rem-calc(20);
-        @media screen and (min-width: 768px) {
-            flex-direction: row;
-            gap: rem-calc(35);
-        }
-
-        .fonctionnement-title{
-            margin: 0;
-            padding: 0;
-            display: none;
-        }
-            &__step{
-                display: flex;
-                justify-content: flex-end;
-                align-items: center;
-                flex-direction: row-reverse;
-                position: relative;
-                width: 92%;
-                max-width: rem-calc(691);
-                margin-bottom: rem-calc(25);
-                padding: rem-calc(28) rem-calc(15) rem-calc(28) 0;
-                border-radius: rem-calc(20);
-                cursor: pointer;
-                transition: all 0.3s ease-in-out;
-                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-                @media screen and (min-width: 768px) {
-                    justify-content: center; 
-                    max-width: rem-calc(307);
-                }
-                .number{
-                    @include flex-center;
-                    position: absolute;
-                    left: rem-calc(-12);
-                    width: rem-calc(25);
-                    height: rem-calc(25);
-                    border-radius: 50%;
-                    font-size: clamp(1.1rem, 2vw, 1.1rem);
-                    color: white;
-                    background-color: $main-color;
-                }    
-                p{
-                    font-size: 16px;
-                    font-weight: 500;
-                    margin: 0;
-                }
-                &:nth-child(2)::after{
-                    content: '\f3cf';
-                    @include logo-process;
-                }
-                &:nth-child(3)::after{
-                    content: '\f03a';
-                    @include logo-process;
-                }
-                &:nth-child(4)::after{
-                    content: '\f54e';
-                    @include logo-process;
-                }
-                &:hover, &:focus{
-                    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
-                        &:hover::after,
-                        &:focus::after{
-                            color: $main-color;
-                        }
+        &__fonctionnement{
+            padding: rem-calc(40) rem-calc(20);
+            @media screen and (min-width: 768px) { 
+                padding: rem-calc(40) rem-calc(20);  
+                    ul{
+                        display: flex;
+                        justify-content: center;
+                        gap: 36.5px;
+                    }           
+            }
+        
+            h2{
+                margin-bottom: 30px;
+                @media screen and (min-width: 768px) { 
+                    padding-left: rem-calc(160);
                 }
             }
-    }
+        
+            &__list{
+                font-weight: 500;
+                padding: 25px 0 25px 0;
+                margin-bottom: 25px;
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                border-radius: 20px;
+                width: 92%;
+                max-width: rem-calc(691);
+                @media screen and (min-width: 768px) {
+                    max-width: rem-calc(322);
+                    margin-left:12px;
+                }
+                transition: all 0.3s ease-in-out;
+                box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+                cursor: pointer;
+        
+                &:hover, &:focus{
+                    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+        
+                    .fa-mobile-screen-button{
+                        color: $main-color;
+                    }
+                
+                    .fa-list-ul{
+                        color: $main-color;
+                    }
+                
+                    .fa-store{
+                        color: $main-color;
+                    }
+                }
+            }
+        
+            &__option{
+                text-align: center;
+                position: relative;
+                right:12px;
+                color: white;
+                padding-top: 2px;
+                margin: 0;
+                border-radius: 50%;
+                width: 24px;
+                height: 22px;
+                background-color: $main-color;
+            }
+        
+            .fa-mobile-screen-button{
+                color: $icon-default;
+            }
+        
+            .fa-list-ul{
+                color: $icon-default;
+            }
+        
+            .fa-store{
+                color: $icon-default;
+            }
+        }
+
 }
 
 
@@ -222,17 +222,6 @@
         }
     }
 
-    /*fonctionnement*/
-
-    .main__fonctionnement{
-        margin: 85px 0 0 180px;
-
-        ul{
-            display: flex;
-            gap: 36.5px;
-        }
-
-    }
 
 /*restaurants*/
 
