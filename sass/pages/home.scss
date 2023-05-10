@@ -175,17 +175,6 @@
         margin: 4px 0 4px 0;
     }
 
-    .new-card1{
-        @include new-button;
-        bottom: 230px;
-        left: 230px;
-    }
-
-    .new-card2{
-        @include new-button;
-        bottom: 230px;
-        left: 230px;
-    }
 
     .heart{
         font-size: 24px;
@@ -198,6 +187,7 @@
     }
 
 }
+
 
 /*tablet-desktop responsive*/
 
@@ -246,18 +236,6 @@
             flex-direction: column;
             width: 490px;
             height: 251px;
-        }
-
-        .new-card1{
-            @include new-button;
-            bottom: 230px;
-            left: 380px;
-        }
-
-        .new-card2{
-            @include new-button;
-            bottom: 230px;
-            left: 380px;
         }
     }
 
