@@ -94,8 +94,22 @@
 .fa-heart{
     position: absolute;
     font-size: 24px;
-    bottom: 1110px;
+    bottom: 1133px;
     left: 320px;
+    &::before{
+        @include heart;
+    }
+    &::after{
+        @include heart;
+        @include heart-solid;
+        }
+    &:hover::before{
+        color:transparent;
+    }
+    &:hover::after{
+        font-weight: 900;
+        opacity: 1;
+    }
 }
 
 /*commande*/
@@ -176,7 +190,7 @@
     }
 
     .fa-heart{
-        bottom: 1110px;
+        bottom: 1133px;
         left: 700px;
     }
 }
