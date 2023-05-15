@@ -27,177 +27,163 @@
 
 /*menu*/
 
-.menu{
-
-    position: relative;
-    margin-top: -100px;
+.main{
     background-color: $menu-background;
-    border-radius: 40px 40px 0 0;
-
-    h2{
-        font-family: $title-font;
-        font-size: 28px;
-        font-weight: 400;
-        margin-left: 17px;
-        padding-top: 32px;
-    }
-
-    h3{
-        margin-bottom: 24px;
-        font-size: 16px;
-        font-weight: 300;
-        margin-left: 13px;
-        position: relative;
-
-        &:before{
-            position: absolute;
-            top:1.5em;
-            width: 40px;
-            content: '';
-            border-top: 3px solid $menu-underline;
-        }
-    }
-
-    .plat{
-        font-size: 18px;
-        font-weight: 500;
-        width: 89%;
-    }
-
-    p{
-        font-size: 15px;
-        font-weight: 300;
-        margin-bottom: 0;
-        margin-top: 5px;
-    }
-
-    .menu-list{
-        margin-right:13px;
-        margin-bottom: 40px;
-    }
-
-    .choice-menu{
-        padding: 12px 0 12px 15px;
-        margin-bottom: 12px;
-        margin-left: 13px;
+    &__menu{  
         display: flex;
-        flex-wrap: wrap;
-        justify-content:space-between;
-        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
-        border-radius: 20px;
-        max-width: 100%;
-    }
-
-    .price{
-        padding-right: 13.5px;
-
-        .price-tag{
-            font-weight: 700;
-        }
-    }
-
-}
-
-.fa-heart{
-    position: absolute;
-    font-size: 24px;
-    bottom: 1133px;
-    left: 320px;
-    &::before{
-        @include heart;
-    }
-    &::after{
-        @include heart;
-        @include heart-solid;
-        }
-    &:hover::before{
-        color:transparent;
-    }
-    &:hover::after{
-        font-weight: 900;
-        opacity: 1;
-    }
-}
-
-/*commande*/
-
-.commande{
-    text-align: center;
-    padding-bottom: 40px;
-}
-
-.commander-btn{
-    padding: 13px 16px 13px 16px;
-    width: 186px;
-    height: 50px;
-    transition: box-shadow 400ms;
-    &:hover{
-        background: $btn-gradient-light;
-        box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.25);
-    }
-}
-
-
-@media (min-width: 768px) {
-
-    .main-container{
-        width: 100%;
-        max-width: 1440px;
-    }
-
-    /*header*/
-    .fa-arrow-left{
-        font-size: 20px;
-        right: 1400px;
-    }
-
-    /*pic*/
-    .menu-pic{
+        flex-direction: column;
+        justify-content: center;
+        background-color: $menu-background;
+        border-radius: 40px 40px 0 0;
+        position: relative;
+        top: -70px;
         width:100%;
-        height: 383px;
+        @media screen and (min-width: 768px) {
+            width: 73%;
+            align-items: center;
+            margin-left: rem-calc(190);
+        }
+            &__title{
+                display: flex;
+                align-items: center;
+                gap: rem-calc(40);
+                font-family: $title-font;
+                font-weight: 400;
+                font-size: 28px;
+                margin-left: rem-calc(17);
+                margin-bottom: rem-calc(20);
+                width: 100%;
+                @media screen and (min-width: 768px) {
+                    justify-content: center;
+                }
+            }
+            .heart{
+                @include flex-center;
+                width: rem-calc(30);
+                height: rem-calc(30);
+                @media screen and (min-width: 768px) {
+                    margin-left: rem-calc(20);
+                }
+                &::before{
+                    @include heart;
+                }
+                &::after{
+                    @include heart;
+                    @include heart-solid;
+                    }
+                &:hover::before{
+                    color:transparent;
+                }
+                &:hover::after{
+                    font-weight: 900;
+                    opacity: 1;
+                }
+            }
+            &__starter, 
+            &__dish, 
+            &__dessert{
+                padding: rem-calc(10) rem-calc(13) rem-calc(40);
+                width: 93.07%;
+                @media screen and (min-width: 768px) {
+                    width: 60%;
+                }
+                    h3{
+                        position: relative;
+                        margin-bottom: rem-calc(30);
+                        margin-top: 0;
+                        font-weight: 300;
+                        font-size: 16px;
+                        text-transform: uppercase;
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            bottom: rem-calc(-10);
+                            width: rem-calc(50);
+                            height: rem-calc(4);
+                            background-color: $third-color;
+                            }
+                        }
+                }
+            &__btn{
+                @include button-style;
+                @include base-shadow;
+                padding: rem-calc(15) rem-calc(40);
+                margin: 0 auto;
+                &:hover{
+                    @include button-hover;
+                }
+            }
+    }
+}
+
+.meal{
+display: flex;
+@include menu-shadow;
+border-radius: rem-calc(20);
+margin-top: rem-calc(12);
+cursor: pointer;
+overflow: hidden;
+animation: appear 1s both;
+@for $i from 2 through 5{
+    &:nth-child(#{$i}){
+        animation-delay: 100ms * $i;
+    }
+}
+    &__description{
+        white-space: nowrap;
         overflow: hidden;
-    }
-
-    .pic{
-        object-fit: cover;
-        object-position: 0 200%;
-        width: 100%;
-        height: 200%;
-        max-height: 200%;
-    }
-
-    /*menu*/
-    .menu{
-        width: 73.25%;
-        margin-left: 193px;
-
-        h1{
-            text-align: center;
-            margin-left: 0;
-            padding-top: 51px;
+        text-overflow:ellipsis;
+        padding: rem-calc(12) rem-calc(10) rem-calc(12) rem-calc(15);
+        h4{
+            overflow: hidden;
+            text-overflow:ellipsis;
+            font-size: 18px;
+            font-weight: 500;
+            margin:0;
         }
-
-        .dishes{
-            padding-left: 210px;
-        }
-    
-        .plat{
-            width: 100%;
-        }
-    
-        .menu-list{
-            margin-right:0;
-        }
-    
-        .choice-menu{
-            padding: 12px 0 12px 15px;
-            margin-left: 0;
-            width: 634px;
+        p{
+            overflow: hidden;
+            text-overflow:ellipsis;
+            font-size: 15px;
+            font-weight: 300;
+            margin: 0;
         }
     }
-
-    .fa-heart{
-        bottom: 1133px;
-        left: 700px;
+    &__price{
+        font-weight: 700;
+        font-size: 15px;
+        margin:0;
+        margin-left: auto;
+        flex-shrink: 0;
+        display: flex;
+        align-items: flex-end;
+        padding: rem-calc(10) rem-calc(13.5) rem-calc(10) rem-calc(5);
     }
+    &__check{
+        @include flex-center;
+        margin-right: -95px;
+        width: 65px;
+        padding: 0 rem-calc(15);
+        background-color: $third-color;
+        transition: margin-right 0.3s ease-in-out;
+            &::after{
+                content: '\f00c';
+                font-family: 'FontAwesome';
+                padding: rem-calc(5);
+                border-radius: 50%;
+                color: $third-color;
+                font-size: rem-calc(15);
+                background-color: #fff;
+                transition: transform 0.4s ease-in-out;
+            }
+            }
+            &:hover &__check,
+            &:focus &__check{
+                margin-right: 0;
+            }
+            &:hover &__check::after,
+            &:focus &__check::after{
+                transform: rotate(360deg);
+            }
+
 }
