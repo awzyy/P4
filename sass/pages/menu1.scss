@@ -128,7 +128,7 @@
     animation: appear 1s both;
     @for $i from 2 through 5{
         &:nth-child(#{$i}){
-            animation-delay: 100ms * $i;
+            animation-delay: 200ms * $i;
         }
     }
         &__description{
