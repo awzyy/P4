@@ -42,7 +42,8 @@
         @media screen and (min-width: 768px) {
             width: 73%;
             align-items: center;
-            margin-left: rem-calc(190);
+            margin-left: auto;
+            margin-right:auto;
         }
             &__title{
                 display: flex;
