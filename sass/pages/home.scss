@@ -234,25 +234,20 @@
 
     .main__restaurants {
         width: 100%;
-        padding: 34px 180px 66px 180px;
+        padding: rem-calc(34) rem-calc(175) rem-calc(66) rem-calc(175);
+    }
+
+    .restaurants-cards{
+        width: 490px;
+        .card{
+            width: 100%;
+        }
     }
 
     .restaurants-list{
+        @include flex-center;
         display: flex;
         flex-wrap: wrap;
         gap: 30px 90px;
     }
-
-    .restaurants-cards {
-        display: flex;
-        flex-wrap: wrap;
-
-        .card {
-            display: flex;
-            flex-direction: column;
-            width: 490px;
-            height: 251px;
-        }
-    }
-
 }
