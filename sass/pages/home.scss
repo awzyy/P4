@@ -55,15 +55,19 @@
                         display: flex;
                         justify-content: center;
                         gap: 36.5px;
+                        @media screen and (min-width: 768px) { 
+                            width: 75%;
+                            margin: auto;
+                        }
                     }           
             }
-        
+
             h2{
                 margin-bottom: 30px;
                 @media screen and (min-width: 768px) { 
-                    display: flex;
-                    justify-content: center;
-                    width: 36%;
+                    width: 75%;
+                    margin-left: auto;
+                    margin-right: auto;
                 }
             }
             
@@ -148,7 +152,9 @@
         margin-top:0;
         margin-bottom: rem-calc(30);
         @media screen and (min-width: 768px) { 
-            margin-left: rem-calc(10);
+            width: 96%;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 }
@@ -225,7 +231,7 @@
 
     .main-container{
         width: 100%;
-        max-width: 1440px;
+        max-width: 1900px;
     }
 
     /*explorer*/
