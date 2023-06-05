@@ -50,7 +50,7 @@
         &__fonctionnement{
             padding: rem-calc(40) rem-calc(20);
             @media screen and (min-width: 768px) { 
-                padding: rem-calc(40) rem-calc(20);  
+                padding: rem-calc(40) rem-calc(0);  
                     &__menu{
                         display: flex;
                         justify-content: center;
@@ -88,7 +88,6 @@
                 @media screen and (min-width: 768px) {
                     max-width: rem-calc(322);
                     margin-left:12px;
-                    width: 92%;
                 }
                 transition: all 0.3s ease-in-out;
                 box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
@@ -152,7 +151,7 @@
         margin-top:0;
         margin-bottom: rem-calc(30);
         @media screen and (min-width: 768px) { 
-            width: 96%;
+            width: 100%;
             margin-left: auto;
             margin-right: auto;
         }
