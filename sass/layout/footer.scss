@@ -20,11 +20,14 @@ footer{
     padding: 0 0 22px 25px;
 
     p{
-        margin: 7px 0 0 0;
+        margin: 0px 0 7px 0;
     }
 
     a{
         margin: 7px 0 0 0;
+        @media (min-width: 768px) {
+            margin: 0;
+        }
     }
 
     .footer-vectors{
@@ -41,13 +44,13 @@ footer{
     .fa-utensils{
         font-size: 13px;
         position: relative;
-        top:10px;
+        top:3px;
     }
 
     .fa-handshake-angle{
         font-size: 13px;
         position: relative;
-        top:10px;
+        top:3px;
     }
 }
 
@@ -67,7 +70,4 @@ footer{
     .logo{
         padding: 64px 26px 31px 100px;
     }
-
-
-
 }
